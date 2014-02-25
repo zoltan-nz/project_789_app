@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails',                      '~> 4.1.0.rc1'
-gem 'sqlite3'
 
 # Assets
 gem 'sass-rails',                 '~> 4.0.1'
@@ -27,6 +26,8 @@ gem 'bcrypt-ruby',                '~> 3.1.2'
 gem 'puma'
 
 group :development do
+  gem 'sqlite3'
+
   gem 'spring'
 
   gem 'better_errors'
