@@ -6,3 +6,5 @@
 .sass-cache
 coverage
 tmp
+log
+public/assets
