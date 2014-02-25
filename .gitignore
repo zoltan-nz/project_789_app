@@ -6,5 +6,6 @@
 .sass-cache
 coverage
 tmp
-log
+*.log
 public/assets
+*.sqlite3
