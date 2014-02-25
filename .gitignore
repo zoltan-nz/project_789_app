@@ -1,0 +1,8 @@
+.idea
+.bundle
+.sass-cache
+.DS_Store
+.tmp
+.sass-cache
+coverage
+tmp
