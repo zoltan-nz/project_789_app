@@ -27,11 +27,13 @@ gem 'bcrypt-ruby',                '~> 3.1.2'
 
 gem 'puma'
 
-gem 'activeadmin', github: 'gregbell/active_admin'
-gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
-gem 'formtastic', github: 'justinfrench/formtastic'
-gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
-gem 'devise', github: 'plataformatec/devise'
+gem 'activeadmin',  github: 'gregbell/active_admin'
+gem 'polyamorous',  github: 'activerecord-hackery/polyamorous'
+gem 'formtastic',   github: 'justinfrench/formtastic'
+gem 'ransack',      github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
+gem 'devise',       github: 'plataformatec/devise'
+
+gem 'cancan'
 
 group :development do
   gem 'sqlite3'
