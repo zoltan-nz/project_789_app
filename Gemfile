@@ -20,6 +20,8 @@ gem 'font-awesome-rails'
 
 gem 'faker'
 
+gem 'foreman'
+
 # Views
 gem 'haml-rails'
 
