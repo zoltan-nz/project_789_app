@@ -7,9 +7,8 @@
     = csrf_meta_tags
   %body
     = render 'layouts/navigation'
-    %p.notice=notice
-    %p.alert=alert
     .container
+      = render 'layouts/flash'
       .row
         .col-md-3
           = render 'layouts/sidebar'
