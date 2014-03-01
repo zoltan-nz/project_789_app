@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 1930da57a656dfe82607c2985855ba17813c6c29
+  revision: 3136ccb910e8d1dba929514c6e9df2b190cacd6d
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
@@ -224,7 +224,7 @@ GEM
     pry-stack_explorer (0.4.9.1)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
-    puma (2.7.1)
+    puma (2.8.0)
       rack (>= 1.1, < 2.0)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)

@@ -1,11 +1,12 @@
 .sidebar
   #logo-widget.hidden-xs.hidden-sm
-    .logo
-      =image_tag 'logo.png'
-    .brand
-      =image_tag 'brand.png'
-    .tagline.text-center
-      %em This is the tagline
+    = link_to root_path do
+      .logo
+        =image_tag 'logo.png'
+      .brand
+        =image_tag 'brand.png'
+      .tagline.text-center
+        %em This is the tagline
     .divider
   #banner-widget
     .banner
