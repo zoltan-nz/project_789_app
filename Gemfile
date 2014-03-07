@@ -22,6 +22,8 @@ gem 'faker'
 
 gem 'foreman'
 
+gem 'acts-as-taggable-on', '~> 3.1.0.rc1'
+
 # Views
 gem 'haml-rails'
 

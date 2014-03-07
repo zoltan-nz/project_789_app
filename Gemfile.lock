@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/activerecord-hackery/ransack.git
-  revision: a7742fdc749c10713065c9d1a774ee9faa7eeef4
+  revision: a97df885c115ca9f846c1aa071086579c0c62db6
   branch: rails-4.1
   specs:
     ransack (1.1.0)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 3136ccb910e8d1dba929514c6e9df2b190cacd6d
+  revision: 739b93bf9d22c89c099cb25a3eeb770726575a13
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
@@ -36,14 +36,14 @@ GIT
 
 GIT
   remote: git://github.com/justinfrench/formtastic.git
-  revision: 691560c6698d3699b6cb5a77d628bc80cd517e1f
+  revision: 619fc6ba77a9b4b67d23232a7a8bb6f197652803
   specs:
     formtastic (2.3.0.rc2)
       actionpack (>= 3.0)
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: aea82d0b03a8aa150be8f692bf880d140e477d2e
+  revision: 71eb6176c361bccc7c9c199e9638982daf0422fb
   specs:
     devise (3.2.3)
       bcrypt (~> 3.0)
@@ -81,6 +81,10 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    acts-as-taggable-on (3.1.0.rc1)
+      actionpack (>= 3, < 5)
+      activerecord (>= 3, < 5)
+      activesupport (>= 3, < 5)
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (5.0.0)
@@ -185,7 +189,7 @@ GEM
     kaminari (0.15.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    listen (2.6.2)
+    listen (2.7.0)
       celluloid (>= 0.15.2)
       celluloid-io (>= 0.15.0)
       rb-fsevent (>= 0.9.3)
@@ -198,7 +202,7 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.2)
     minitest (5.3.0)
-    multi_json (1.8.4)
+    multi_json (1.9.0)
     nio4r (1.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
@@ -224,7 +228,7 @@ GEM
     pry-stack_explorer (0.4.9.1)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
-    puma (2.8.0)
+    puma (2.8.1)
       rack (>= 1.1, < 2.0)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
@@ -294,7 +298,7 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
-    semantic-ui-sass (0.13.1.0)
+    semantic-ui-sass (0.14.0.0)
       sass (~> 3.2)
     slop (3.4.7)
     spring (1.1.2)
@@ -336,6 +340,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  acts-as-taggable-on (~> 3.1.0.rc1)
   bcrypt-ruby (~> 3.1.2)
   better_errors
   binding_of_caller
