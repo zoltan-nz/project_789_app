@@ -24,6 +24,7 @@ gem 'foreman'
 
 gem 'acts-as-taggable-on', '~> 3.1.0.rc1'
 gem 'paperclip'
+gem 'friendly_id'
 
 # Views
 gem 'haml-rails'
