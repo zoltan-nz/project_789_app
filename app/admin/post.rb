@@ -14,6 +14,8 @@ ActiveAdmin.register Post do
   #  permitted
   # end
 
+  permit_params :title, :lead, :body
+
   form do |f|
     f.inputs do
       f.input :title
