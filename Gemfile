@@ -34,6 +34,8 @@ gem 'bcrypt-ruby',                '~> 3.1.2'
 gem 'puma'
 
 gem 'activeadmin',  github: 'gregbell/active_admin'
+gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
+gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 gem 'polyamorous',  github: 'activerecord-hackery/polyamorous'
 gem 'formtastic',   github: 'justinfrench/formtastic'
 gem 'ransack',      github: 'activerecord-hackery/ransack', branch: 'rails-4.1'

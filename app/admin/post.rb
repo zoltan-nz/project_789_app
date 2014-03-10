@@ -13,5 +13,15 @@ ActiveAdmin.register Post do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-  
+
+  form do |f|
+    f.inputs do
+      f.input :title
+      f.input :lead, as: :wysihtml5, commands: :all , blocks: :all
+      f.input :body, as: :wysihtml5, commands: :all , blocks: :all
+    end
+
+    f.actions
+  end
+
 end
