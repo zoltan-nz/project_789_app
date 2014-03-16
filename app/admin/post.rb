@@ -21,6 +21,7 @@ ActiveAdmin.register Post do
       f.input :title
       f.input :lead, as: :wysihtml5, commands: :all , blocks: :all
       f.input :body, as: :wysihtml5, commands: :all , blocks: :all
+      f.input :categories
     end
 
     f.actions

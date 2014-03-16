@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140310005627) do
+ActiveRecord::Schema.define(version: 20140316165725) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -40,6 +40,15 @@ ActiveRecord::Schema.define(version: 20140310005627) do
     t.string   "storage_format"
     t.string   "storage_mime_type"
     t.string   "storage_size"
+  end
+
+  create_table "categories", force: true do |t|
+    t.string "name"
+  end
+
+  create_table "categories_posts", force: true do |t|
+    t.integer "category_id"
+    t.integer "post_id"
   end
 
   create_table "posts", force: true do |t|
@@ -84,6 +93,7 @@ ActiveRecord::Schema.define(version: 20140310005627) do
     t.datetime "updated_at"
   end
 
+  add_index "users", ["admin"], name: "index_users_on_admin"
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
