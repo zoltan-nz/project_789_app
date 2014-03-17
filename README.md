@@ -2,6 +2,8 @@
 
 Todo:
 
+- Category implemented, next step to implement in the views
+
 - Implement tagging in views (acts-astaggable-on)
 - Implement categorizing (model and view)
 - Image management (paperclip)
