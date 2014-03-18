@@ -10,5 +10,7 @@
       %p=post.lead
       .meta-nav
     %footer
+      .categories
+        =post.categories.map(&:name).join(', ')
       .more-link.pull-right
         =link_to 'Read Full Article', post
