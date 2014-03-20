@@ -15,4 +15,6 @@ Todo:
 - merit - reputation management
 - recommendable - like/dislike
 
+- Finding a presenter gem and using in views
+
 Deadline: End of April
