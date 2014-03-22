@@ -17,4 +17,6 @@ Todo:
 
 - Finding a presenter gem and using in views
 
+- Building administration and cms system in emberjs
+
 Deadline: End of April
