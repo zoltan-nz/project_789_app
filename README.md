@@ -19,4 +19,17 @@ Todo:
 
 - Building administration and cms system in emberjs (should be a separated open source project)
 
+Let's build the Admin area under www.example.com/admin, and full emberjs app...
+
+Should manage:
+- authentication
+- categories
+- tags
+- create/manage users
+- manage posts
+- manage pages
+- upload images
+
+Delete ActiveAdmin... :)
+
 Deadline: End of April
