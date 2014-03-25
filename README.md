@@ -32,4 +32,7 @@ Should manage:
 
 Delete ActiveAdmin... :)
 
+- Loading Page
+- Error management page
+
 Deadline: End of April
