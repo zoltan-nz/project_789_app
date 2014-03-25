@@ -41,7 +41,12 @@ gem 'formtastic',   github: 'justinfrench/formtastic'
 gem 'ransack',      github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
 gem 'devise',       github: 'plataformatec/devise'
 
-gem 'cancan'
+gem 'cancancan'
+
+# EmberJS
+
+gem 'ember-rails'
+gem 'ember-source'
 
 group :development do
   gem 'sqlite3'
