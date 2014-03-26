@@ -48,6 +48,11 @@ gem 'cancancan'
 gem 'ember-rails'
 gem 'ember-source'
 
+# MongoDB
+gem 'mongoid'
+gem 'mongoid-paperclip'
+gem 'mongoid-history'
+
 group :development do
   gem 'sqlite3'
 
@@ -94,4 +99,4 @@ end
 gem 'sdoc',                       '~> 0.4.0',          group: :doc
 
 gem 'rails_12factor', group: :production
-gem 'pg',             group: :production
+# gem 'pg',             group: :production
