@@ -49,7 +49,7 @@ gem 'ember-rails'
 gem 'ember-source'
 
 # MongoDB
-gem 'mongoid'
+gem 'mongoid',      github: 'mongoid/mongoid'
 gem 'mongoid-paperclip'
 gem 'mongoid-history'
 
