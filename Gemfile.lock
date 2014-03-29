@@ -53,7 +53,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: 937ed6291ced6081f003358746621249c4bbef20
+  revision: 71d8dd37bb82df286cfa0393e8105c0770fec3da
   specs:
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -459,7 +459,7 @@ DEPENDENCIES
   rails (~> 4.1.0.rc1)
   rails_12factor
   ransack!
-  rb-inotify (~> 0.9)
+  rb-fsevent
   rb-readline
   rspec-rails (~> 3.0.0.beta2)
   sass-rails (~> 4.0.1)
