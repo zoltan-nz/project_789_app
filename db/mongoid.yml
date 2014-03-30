@@ -1,0 +1,52 @@
+defaults: &defaults
+  hosts:
+    - localhost:27017
+
+defaults: &development
+  <<: *defaults
+  allow_dynamic_fields: true
+  autocreate_indexes: false
+
+development:
+  sessions:
+    default:
+      database: core_push_development
+      <<: *development
+  options:
+    identity_map_enabled: true
+
+# defaults: &test
+#   options:
+#     consistency: :strong # dont touch this - its fucking important
+#     safe: true # or this
+
+test:
+  sessions:
+    default:
+      database: core_push_test
+      <<: *defaults
+
+defaults: &staging
+  <<: *defaults
+  options:
+    consistency: :strong
+    safe: true
+
+staging:
+  sessions:
+    default:
+      database: core_push
+      <<: *staging
+
+defaults: &production
+  hosts:
+    - localhost:27017
+  options:
+    consistency: :strong # dont touch this - its fucking important
+    safe: true # or this
+
+production:
+  sessions:
+    default:
+      database: core_push
+      <<: *production

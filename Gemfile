@@ -14,17 +14,13 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'turbolinks'
 
+# css framerworks
 gem 'semantic-ui-sass'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 
+# create lorem ipsum text
 gem 'faker'
-
-gem 'foreman'
-
-gem 'acts-as-taggable-on', '~> 3.1.0.rc1'
-gem 'paperclip'
-gem 'friendly_id'
 
 # Views
 gem 'haml-rails'
@@ -33,28 +29,21 @@ gem 'bcrypt-ruby',                '~> 3.1.2'
 
 gem 'puma'
 
-gem 'activeadmin',  github: 'gregbell/active_admin'
-gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
-gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
-gem 'polyamorous',  github: 'activerecord-hackery/polyamorous'
-gem 'formtastic',   github: 'justinfrench/formtastic'
-gem 'ransack',      github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
+# Permission management
 gem 'devise',       github: 'plataformatec/devise'
+gem 'cancancan',    '~> 1.7'
 
-gem 'cancancan'
-
-# EmberJS
-
+# EmberJS for admin
 gem 'ember-rails'
 gem 'ember-source'
 
-# MongoDB
-gem 'mongoid',      github: 'mongoid/mongoid'
+# MongoDB - the database
+gem 'mongoid', '~> 4.0.0.beta1'
+# Pictures in mongo
 gem 'mongoid-paperclip'
 gem 'mongoid-history'
 
 group :development do
-  gem 'sqlite3'
 
   gem 'spring'
 
@@ -90,13 +79,9 @@ group :development, :test do
   gem 'rb-inotify', '~> 0.9', require: false   unless RUBY_PLATFORM.match(/darwin/)
 end
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
 gem 'sdoc',                       '~> 0.4.0',          group: :doc
 
+# heroku
 gem 'rails_12factor', group: :production
-# gem 'pg',             group: :production
+gem 'foreman'
+
