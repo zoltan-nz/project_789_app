@@ -10,7 +10,7 @@ defaults: &development
 development:
   sessions:
     default:
-      database: core_push_development
+      database: blog_development
       <<: *development
   options:
     identity_map_enabled: true
@@ -23,20 +23,8 @@ development:
 test:
   sessions:
     default:
-      database: core_push_test
+      database: blog_test
       <<: *defaults
-
-defaults: &staging
-  <<: *defaults
-  options:
-    consistency: :strong
-    safe: true
-
-staging:
-  sessions:
-    default:
-      database: core_push
-      <<: *staging
 
 defaults: &production
   hosts:
@@ -48,5 +36,5 @@ defaults: &production
 production:
   sessions:
     default:
-      database: core_push
+      database: blog_production
       <<: *production
