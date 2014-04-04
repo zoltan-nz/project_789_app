@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: 145ce9e1de6108cbcc8551a5011685f05d00437e
+  revision: 314f731a664cbb45db2aa793e1697dd519a29695
   specs:
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -56,7 +56,7 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
-    bson (2.2.1)
+    bson (2.2.2)
     builder (3.2.2)
     cancancan (1.7.1)
     capybara (2.2.1)
@@ -83,7 +83,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    connection_pool (1.2.0)
+    connection_pool (2.0.0)
     database_cleaner (1.2.0)
     debug_inspector (0.0.2)
     diff-lcs (1.2.5)
@@ -165,7 +165,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.5.3)
-    minitest (5.3.1)
+    minitest (5.3.2)
     mongoid (4.0.0.beta1)
       activemodel (>= 4.0.0)
       moped (~> 2.0.beta6)
@@ -177,16 +177,16 @@ GEM
       mongoid (>= 3.0)
     mongoid-paperclip (0.0.9)
       paperclip (>= 2.3.6)
-    moped (2.0.0.beta6)
+    moped (2.0.0.rc1)
       bson (~> 2.2)
-      connection_pool (~> 1.2)
+      connection_pool (~> 2.0)
       optionable (~> 0.2.0)
     multi_json (1.9.2)
     nio4r (1.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     optionable (0.2.0)
-    origin (2.1.0)
+    origin (2.1.1)
     orm_adapter (0.5.0)
     paperclip (4.1.1)
       activemodel (>= 3.0.0)
@@ -355,7 +355,7 @@ DEPENDENCIES
   rack-livereload
   rails (~> 4.1.0.rc1)
   rails_12factor
-  rb-fsevent
+  rb-inotify (~> 0.9)
   rb-readline
   rspec-rails (~> 3.0.0.beta2)
   sass-rails (~> 4.0.1)
