@@ -37,6 +37,10 @@ gem 'cancancan',    '~> 1.7'
 gem 'ember-rails'
 gem 'ember-source'
 
+# JSON managment
+gem 'rabl'
+gem 'oj'
+
 # MongoDB - the database
 gem 'mongoid', '~> 4.0.0.beta1'
 # Pictures in mongo
@@ -44,8 +48,6 @@ gem 'mongoid-paperclip'
 gem 'mongoid-history'
 
 group :development do
-
-  gem 'spring'
 
   gem 'better_errors'
   gem 'quiet_assets'
@@ -61,7 +63,6 @@ group :test do
   gem 'poltergeist'
   gem 'guard-rspec'
   gem 'database_cleaner'
-  gem 'zeus'
 end
 
 group :development, :test do
@@ -77,6 +78,9 @@ group :development, :test do
   gem 'rb-fsevent', require: false             if RUBY_PLATFORM.match(/darwin/)
   #needed by guard on ubuntu
   gem 'rb-inotify', '~> 0.9', require: false   unless RUBY_PLATFORM.match(/darwin/)
+
+  gem 'zeus'
+  gem 'spring'
 end
 
 gem 'sdoc',                       '~> 0.4.0',          group: :doc
