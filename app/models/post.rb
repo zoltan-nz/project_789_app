@@ -1,9 +1,10 @@
 class Post < ActiveRecord::Base
 
-  include FriendlyId
-  friendly_id :title
+  include Mongoid::Document
 
-  acts_as_taggable
+  field :title,   type: String
+  field :lead,    type: String
+  field :body,    type: String
 
   has_and_belongs_to_many :categories
 
