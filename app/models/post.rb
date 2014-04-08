@@ -1,6 +1,7 @@
-class Post < ActiveRecord::Base
+class Post
 
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   field :title,   type: String
   field :lead,    type: String

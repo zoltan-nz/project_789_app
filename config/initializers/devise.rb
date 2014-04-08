@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = 'fe03101e86de5bacd29abde0f0aeff13b7d6e76979c5f25eaf19eaebec35ff7d19d74d41d7abb973bc7996ca7933b349d7858962f871f44f01a27ef82a0702ec'
+  # config.secret_key = '9c4a4279b805c464ccab19bab3cf767d9b0170c8922bf87f96a361b60a37e768b47fc6e4e15972c3fc442e076823261de67ebbaee6c80bf7be4358497aed688d'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -19,7 +19,7 @@ Devise.setup do |config|
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
-  require 'devise/orm/active_record'
+  require 'devise/orm/mongoid'
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -91,11 +91,13 @@ Devise.setup do |config|
   #
   # Limiting the stretches to just one in testing will increase the performance of
   # your test suite dramatically. However, it is STRONGLY RECOMMENDED to not use
-  # a value less than 10 in other environments.
+  # a value less than 10 in other environments. Note that, for bcrypt (the default
+  # encryptor), the cost increases exponentially with the number of stretches (e.g.
+  # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '14777b9e9fa43c13bf16b101c6c94dfadc50914ab0edba62d13992c4744aaf3dcf4e6bff98028e4940d45ca1e0e64325849744b1b07bfcb8e2e2d5bf79941f1e'
+  # config.pepper = 'a8ed46ef7d6515713f80308b0117ab65d57bcf550a9cc14993dad85a23f37fb7c4c8d625f164f95246ce4933baca4179b6fcf6c5793f5a8861fcaae8c8e5634b'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -115,8 +117,8 @@ Devise.setup do |config|
 
   # If true, requires any email changes to be confirmed (exactly the same way as
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
-  # db field (see migrations). Until confirmed new email is stored in
-  # unconfirmed email column, and copied to email column on successful confirmation.
+  # db field (see migrations). Until confirmed, new email is stored in
+  # unconfirmed_email column, and copied to email column on successful confirmation.
   config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
@@ -125,6 +127,9 @@ Devise.setup do |config|
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
   # config.remember_for = 2.weeks
+
+  # Invalidates all the remember me tokens when the user signs out.
+  config.expire_all_remember_me_on_sign_out = true
 
   # If true, extends the user's remember period when remembered via cookie.
   # config.extend_remember_period = false
