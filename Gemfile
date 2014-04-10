@@ -16,7 +16,7 @@ gem 'turbolinks'
 
 # css framerworks
 gem 'semantic-ui-sass'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
 gem 'font-awesome-rails'
 
 # create lorem ipsum text
@@ -55,6 +55,9 @@ group :development do
 
   gem 'guard-livereload', require: false
   gem 'rack-livereload'
+
+  gem 'hirb'
+  gem 'awesome_print'
 end
 
 group :test do
