@@ -9,3 +9,4 @@ tmp
 *.log
 public/assets
 *.sqlite3
+tags
