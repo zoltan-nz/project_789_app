@@ -5,9 +5,9 @@ ruby '2.1.1'
 gem 'rails',                      '~> 4.1.0'
 
 # Assets
-gem 'sass-rails',                 '~> 4.0.1'
+gem 'sass-rails',                 '~> 4.0.3'
 
-gem 'uglifier',                   '>= 1.3.0'
+gem 'uglifier',                   '~> 2.5.0'
 gem 'coffee-rails',               '~> 4.0.1'
 
 gem 'jquery-rails'
@@ -16,7 +16,7 @@ gem 'turbolinks'
 
 # css framerworks
 gem 'semantic-ui-sass'
-gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
+gem 'bootstrap-sass',             '~> 3.1.1.0'
 gem 'font-awesome-rails'
 
 # create lorem ipsum text
@@ -25,13 +25,13 @@ gem 'faker'
 # Views
 gem 'haml-rails'
 
-gem 'bcrypt-ruby',                '~> 3.1.2'
+gem 'bcrypt',                     '~> 3.1.7'
 
 gem 'puma'
 
 # Permission management
-gem 'devise',       github: 'plataformatec/devise'
-gem 'cancancan',    '~> 1.7'
+gem 'devise',                     github: 'platformatec/devise'
+gem 'cancancan',                  '~> 1.7'
 
 # EmberJS for admin
 gem 'ember-rails'
@@ -42,7 +42,7 @@ gem 'rabl'
 gem 'oj'
 
 # MongoDB - the database
-gem 'mongoid', '~> 4.0.0.beta1'
+gem 'mongoid',                    '~> 4.0.0.beta1'
 # Pictures in mongo
 gem 'mongoid-paperclip'
 gem 'mongoid-history'
