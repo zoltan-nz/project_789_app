@@ -16,4 +16,5 @@
 //= require turbolinks
 //= require semantic-ui
 //= require bootstrap
+//= require twitter/typeahead
 //= require_tree .

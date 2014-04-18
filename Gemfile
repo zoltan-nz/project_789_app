@@ -14,6 +14,8 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'turbolinks'
 
+gem 'twitter-typehead-rails'
+
 # css framerworks
 gem 'semantic-ui-sass'
 gem 'bootstrap-sass',             '~> 3.1.1.0'
@@ -83,7 +85,7 @@ group :development, :test do
   gem 'rb-inotify', '~> 0.9', require: false   unless RUBY_PLATFORM.match(/darwin/)
 
   gem 'zeus'
-  gem 'spring'
+  gem 'spring',                   '~> 1.1.2'
 end
 
 gem 'sdoc',                       '~> 0.4.0',          group: :doc
