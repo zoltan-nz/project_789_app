@@ -80,9 +80,9 @@ group :development, :test do
   gem 'rb-readline', require: false
 
   #needed by guard on macosx
-  gem 'rb-fsevent', require: false             if RUBY_PLATFORM.match(/darwin/)
+  gem 'rb-fsevent', require: false           #  if RUBY_PLATFORM.match(/darwin/)
   #needed by guard on ubuntu
-  gem 'rb-inotify', '~> 0.9', require: false   unless RUBY_PLATFORM.match(/darwin/)
+  gem 'rb-inotify', '~> 0.9', require: false  # unless RUBY_PLATFORM.match(/darwin/)
 
   gem 'zeus'
   gem 'spring',                   '~> 1.1.2'
