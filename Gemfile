@@ -14,7 +14,7 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'turbolinks'
 
-gem 'twitter-typehead-rails'
+gem 'twitter-typeahead-rails'
 
 # css framerworks
 gem 'semantic-ui-sass'
@@ -32,7 +32,7 @@ gem 'bcrypt',                     '~> 3.1.7'
 gem 'puma'
 
 # Permission management
-gem 'devise',                     github: 'platformatec/devise'
+gem 'devise',                     github: 'plataformatec/devise'
 gem 'cancancan',                  '~> 1.7'
 
 # EmberJS for admin
