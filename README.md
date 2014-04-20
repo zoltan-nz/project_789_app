@@ -35,4 +35,10 @@ Delete ActiveAdmin... :)
 - Loading Page
 - Error management page
 
-Deadline: End of April
+Steps:
+
+1. Setup devise with mongodb properly. (Registration, confirmation,
+   login)
+2. List simple blog posts in sequence. Title, body and one picture
+   enough.
+3. Create admin area with emberjs where user can upload blog posts.

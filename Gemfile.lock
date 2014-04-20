@@ -365,7 +365,7 @@ DEPENDENCIES
   rails (~> 4.1.0)
   rails_12factor
   rb-fsevent
-  rb-inotify (~> 0.9)
+  rb-inotify (~> 0.9.3)
   rb-readline
   rspec-rails (~> 3.0.0.beta2)
   sass-rails (~> 4.0.3)
