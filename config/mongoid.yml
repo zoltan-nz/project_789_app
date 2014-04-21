@@ -1,5 +1,11 @@
-
 development:
+  sessions:
+    default:
+      database: food-development
+      hosts:
+        - localhost:27017
+
+production:
   sessions:
     default:
       database: food-development

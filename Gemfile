@@ -84,7 +84,7 @@ group :development, :test do
   #needed by guard on ubuntu
   gem 'rb-inotify', '~> 0.9.3', require: false  # unless RUBY_PLATFORM.match(/darwin/)
 
-  gem 'zeus'
+  gem 'zeus', '0.13.3'
   gem 'spring',                   '~> 1.1.2'
 end
 
