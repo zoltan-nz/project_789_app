@@ -30,8 +30,6 @@ Should manage:
 - manage pages
 - upload images
 
-Delete ActiveAdmin... :)
-
 - Loading Page
 - Error management page
 
