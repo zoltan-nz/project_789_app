@@ -37,6 +37,8 @@ Steps:
 
 1. Setup devise with mongodb properly. (Registration, confirmation,
    login)
+   - Nice stylish registration and login screens.
 2. List simple blog posts in sequence. Title, body and one picture
    enough.
+   - Home page only with pagination.
 3. Create admin area with emberjs where user can upload blog posts.

@@ -1,11 +1,9 @@
 class User
   include Mongoid::Document
-  include Mongoid::Timestamps
-
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+    :recoverable, :rememberable, :trackable, :validatable
 
   ## Database authenticatable
   field :email,              type: String, default: ""
@@ -35,5 +33,14 @@ class User
   # field :failed_attempts, type: Integer, default: 0 # Only if lock strategy is :failed_attempts
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
+  #
+
+  # Hack for fixing mongoid, devise and rails 4.1 incompatibility
+  class << self
+    def serialize_from_session(key, salt)
+      record = to_adapter.get(key[0]['$oid'])
+      record if record && record.authenticatable_salt == salt
+    end
+  end
 
 end

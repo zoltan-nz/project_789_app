@@ -44,7 +44,7 @@ gem 'rabl'
 gem 'oj'
 
 # MongoDB - the database
-gem 'mongoid',                    '~> 4.0.0.beta1'
+gem 'mongoid', github: 'mongoid/mongoid' #                    '~> 4.0.0.beta1'
 # Pictures in mongo
 gem 'mongoid-paperclip'
 gem 'mongoid-history'
