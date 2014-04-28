@@ -10,3 +10,4 @@ tmp
 public/assets
 *.sqlite3
 tags
+.gitmodules
