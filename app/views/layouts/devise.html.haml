@@ -10,7 +10,10 @@
     .container
       = render 'layouts/flash'
       .row
-        .col-md-4
-        .col-md-8
-          = yield
+        .col-md-3
+          = render 'layouts/sidebar'
+        .col-md-9
+          .entry
+            .well
+              = yield
       = render 'layouts/footer'

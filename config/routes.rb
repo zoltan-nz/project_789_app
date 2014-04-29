@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   devise_for :users
   resources :posts
 
+  get 'pages/about'
+  get 'pages/competition'
+  get 'pages/blog'
+
   namespace :admin do 
     get '/',    to: 'admin#index'
   end

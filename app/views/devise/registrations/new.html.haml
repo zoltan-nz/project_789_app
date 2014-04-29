@@ -1,6 +1,6 @@
 %h2 Sign up
 
-= form_for resource, as: resource_name, url: registration_path(resource_name), html: {class: 'form-horizontal'} do |f|
+= form_for resource, as: resource_name, url: registration_path(resource_name), html: {class: 'form-brand form-horizontal'} do |f|
   = devise_error_messages!
   .form-group
     = f.label :email, 'Email: ', class: 'col-sm-2 control-label'
@@ -16,6 +16,6 @@
       = f.password_field :password_confirmation, autocomplete: 'off', class:'form-control'
   .form-group
     .col-sm-offset-2.col-sm-5
-      = f.submit "Sign up", class: 'btn'
+      = f.submit "Sign up", class: 'btn btn-danger btn-arrow'
 
 = render "devise/shared/links"

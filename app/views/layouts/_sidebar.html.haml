@@ -7,19 +7,20 @@
         =image_tag 'brand.png'
       .tagline.text-center
         %em This is the tagline
+  - unless devise_controller?
     .divider
-  #banner-widget
-    - if current_user
-      =render 'layouts/login_banner'
-    - else
-      =render 'layouts/logout_banner'
+    #banner-widget
+      - if current_user
+        =render 'layouts/login_banner'
+      - else
+        =render 'layouts/logout_banner'
 
-    .divider
-  #tweets-widget
-    %h3.strong Tweets
-    - 5.times do
-      %p
-        @
-        %strong 'username'
-        Content...
-        =link_to 'something', '#'
+      .divider
+    #tweets-widget
+      %h3.strong Tweets
+      - 5.times do
+        %p
+          @
+          %strong 'username'
+          Content...
+          =link_to 'something', '#'
