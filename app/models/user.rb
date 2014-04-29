@@ -23,6 +23,8 @@ class User
   field :current_sign_in_ip, type: String
   field :last_sign_in_ip,    type: String
 
+  ## Admin
+  field :admin,              type: Boolean, default: false
   ## Confirmable
   # field :confirmation_token,   type: String
   # field :confirmed_at,         type: Time
@@ -41,6 +43,10 @@ class User
       record = to_adapter.get(key[0]['$oid'])
       record if record && record.authenticatable_salt == salt
     end
+  end
+
+  def admin?
+    self.admin
   end
 
 end

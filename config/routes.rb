@@ -9,9 +9,7 @@ Rails.application.routes.draw do
   get 'pages/competition'
   get 'pages/blog'
 
-  namespace :admin do 
-    get '/',    to: 'admin#index'
-  end
+  get 'admin', to: 'admin#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
