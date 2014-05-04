@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mongoid/mongoid.git
-  revision: 8b33b62a43fb989a6a6db9beb72d98d8c84874ea
+  revision: e93a4837b0266db46c24aae172e184f57c847b04
   specs:
     mongoid (4.0.0.beta1)
       activemodel (>= 4.0.0)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: 1fbc165b985b85f70c8df188299fc2e23a4963da
+  revision: 873e57e97d4cdd9e24ffb92c7ac785558d3f1eee
   specs:
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -100,15 +100,15 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    ember-data-source (0.14)
+    ember-data-source (1.0.0.beta.7)
       ember-source
-    ember-rails (0.14.1)
+    ember-rails (0.15.0)
       active_model_serializers
       barber (>= 0.4.1)
-      ember-data-source
-      ember-source
+      ember-data-source (>= 1.0.0.beta.5)
+      ember-source (>= 1.1.0)
       execjs (>= 1.2)
-      handlebars-source
+      handlebars-source (> 1.0.0)
       jquery-rails (>= 1.0.17)
       railties (>= 3.1)
     ember-source (1.5.1.1)
@@ -162,7 +162,7 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (1.8.1)
-    listen (2.7.3)
+    listen (2.7.4)
       celluloid (>= 0.15.2)
       celluloid-io (>= 0.15.0)
       rb-fsevent (>= 0.9.3)
@@ -189,7 +189,7 @@ GEM
     nio4r (1.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
-    oj (2.8.1)
+    oj (2.9.0)
     optionable (0.2.0)
     origin (2.1.1)
     orm_adapter (0.5.0)
