@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/ghempton/ember-script-rails.git
+  revision: 9a1f09b0c53bf51c37c35490cc76cd7dfe461234
+  specs:
+    ember_script-rails (0.0.3)
+      ember_script (>= 0.0.4)
+      rails
+
+GIT
   remote: git://github.com/mongoid/mongoid.git
   revision: e93a4837b0266db46c24aae172e184f57c847b04
   specs:
@@ -10,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: 873e57e97d4cdd9e24ffb92c7ac785558d3f1eee
+  revision: a51036196a0f6d397d624be74351bc638cce8b4d
   specs:
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -64,7 +72,7 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
-    bson (2.2.2)
+    bson (2.2.3)
     builder (3.2.2)
     cancancan (1.7.1)
     capybara (2.2.1)
@@ -113,6 +121,11 @@ GEM
       railties (>= 3.1)
     ember-source (1.5.1.1)
       handlebars-source (~> 1.0)
+    ember_script (0.0.5)
+      ember_script-source (>= 0.0.2)
+      execjs
+      tilt
+    ember_script-source (0.0.14)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
@@ -185,7 +198,7 @@ GEM
       bson (~> 2.2)
       connection_pool (~> 2.0)
       optionable (~> 0.2.0)
-    multi_json (1.9.3)
+    multi_json (1.10.0)
     nio4r (1.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
@@ -344,6 +357,7 @@ DEPENDENCIES
   devise!
   ember-rails
   ember-source
+  ember_script-rails!
   factory_girl_rails
   faker
   font-awesome-rails

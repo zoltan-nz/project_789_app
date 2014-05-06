@@ -38,6 +38,7 @@ gem 'cancancan',                  '~> 1.7'
 # EmberJS for admin
 gem 'ember-rails'
 gem 'ember-source'
+gem 'ember_script-rails', :github => 'ghempton/ember-script-rails'
 
 # JSON managment
 gem 'rabl'
