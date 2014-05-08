@@ -39,6 +39,7 @@ gem 'cancancan',                  '~> 1.7'
 gem 'ember-rails'
 gem 'ember-source'
 gem 'ember_script-rails', :github => 'ghempton/ember-script-rails'
+gem 'emblem-rails'
 
 # JSON managment
 gem 'rabl'

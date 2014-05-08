@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: f611b6306949720f71eccce69b0c10f606396dee
+  revision: 6129215afecc0b3628e0d46f5253f89e2a862c6b
   specs:
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -64,6 +64,9 @@ GEM
       ember-source
       execjs
       handlebars-source
+    barber-emblem (0.1.1)
+      barber (>= 0.4.1)
+      emblem-source
     bcrypt (3.1.7)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
@@ -126,6 +129,10 @@ GEM
       execjs
       tilt
     ember_script-source (0.0.14)
+    emblem-rails (0.2.1)
+      barber-emblem (~> 0.1.1)
+      ember-rails (>= 0.14.0)
+    emblem-source (0.3.15)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
@@ -358,6 +365,7 @@ DEPENDENCIES
   ember-rails
   ember-source
   ember_script-rails!
+  emblem-rails
   factory_girl_rails
   faker
   font-awesome-rails
