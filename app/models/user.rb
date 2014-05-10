@@ -5,6 +5,10 @@ class User
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
 
+  ## Personal Details
+  field :first_name
+  field :last_name
+
   ## Database authenticatable
   field :email,              type: String, default: ""
   field :encrypted_password, type: String, default: ""
@@ -36,6 +40,8 @@ class User
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
   #
+
+  has_many :posts
 
   # Hack for fixing mongoid, devise and rails 4.1 incompatibility
   class << self

@@ -24,7 +24,7 @@
             = link_to 'Login', new_user_session_path
         - if current_user.try(:admin?)
           %li{class: ('active' if current_page?(admin_url))}
-            = link_to 'Admin', admin_path
+            = link_to 'Admin', admin_path, data: {'no_turbolink' => ''}
       %ul.nav.navbar-nav.navbar-right.social-icons
         %li
           %a{href: "#"}

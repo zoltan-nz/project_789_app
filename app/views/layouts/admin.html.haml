@@ -3,6 +3,11 @@
   %head
     %title App
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'ember-application'
     = csrf_meta_tags
   %body
+    = render 'layouts/navigation'
+    .container
+      #ember-app
+
+    =render 'layouts/footer'

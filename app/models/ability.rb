@@ -6,7 +6,8 @@ class Ability
     if current_user.admin?
       can :manage, :all
     else
-      can :read, :all
+      can :read, :post
+      can :read, :page
     end
 
     # Define abilities for the passed in user here. For example:

@@ -38,7 +38,7 @@ gem 'cancancan',                  '~> 1.7'
 # EmberJS for admin
 gem 'ember-rails'
 gem 'ember-source'
-gem 'ember_script-rails', :github => 'ghempton/ember-script-rails'
+gem 'ember_script-rails',         github: 'ghempton/ember-script-rails'
 gem 'emblem-rails'
 
 # JSON managment
@@ -46,7 +46,7 @@ gem 'rabl'
 gem 'oj'
 
 # MongoDB - the database
-gem 'mongoid', github: 'mongoid/mongoid' #                    '~> 4.0.0.beta1'
+gem 'mongoid',                    github: 'mongoid/mongoid'
 # Pictures in mongo
 gem 'mongoid-paperclip'
 gem 'mongoid-history'
@@ -57,7 +57,7 @@ group :development do
   gem 'quiet_assets'
   gem 'binding_of_caller'
 
-  gem 'guard-livereload', require: false
+  gem 'guard-livereload',         require: false
   gem 'rack-livereload'
 
   gem 'hirb'
@@ -79,20 +79,20 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-stack_explorer'
   gem 'pry-nav'
-  gem 'rb-readline', require: false
+  gem 'rb-readline',              require: false
 
   #needed by guard on macosx
-  gem 'rb-fsevent', require: false           #  if RUBY_PLATFORM.match(/darwin/)
+  gem 'rb-fsevent',               require: false           #  if RUBY_PLATFORM.match(/darwin/)
   #needed by guard on ubuntu
-  gem 'rb-inotify', '~> 0.9.3', require: false  # unless RUBY_PLATFORM.match(/darwin/)
+  gem 'rb-inotify',               '~> 0.9.3',          require: false  # unless RUBY_PLATFORM.match(/darwin/)
 
-  gem 'zeus', '0.13.3'
+  gem 'zeus',                     '0.13.3'
   gem 'spring',                   '~> 1.1.2'
 end
 
 gem 'sdoc',                       '~> 0.4.0',          group: :doc
 
 # heroku
-gem 'rails_12factor', group: :production
+gem 'rails_12factor',             group: :production
 gem 'foreman'
 

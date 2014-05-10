@@ -1,10 +1,10 @@
 -flash.each do |name, msg|
   - if msg.is_a?(String)
-    %div{class: "alert alert-#{[:notice, :success].include?(name) ? "success" : "error"}"}
+    %div{class: "alert alert-#{['notice', 'success'].include?(name) ? "success" : "danger"}"}
       %a.close{data: {dismiss: 'alert'}} ×
       =content_tag :div, msg, id: "flash_#{name}"
   - if msg.is_a?(Array)
-    %div.alert{class: "alert-#{[:notice, :success].include?(name) ? "success" : "error"}"}
+    %div.alert{class: "alert-#{[:notice, :success].include?(name) ? "success" : "danger"}"}
       %a.close{data: {dismiss: 'alert'}} ×
       - msg.each do |m|
         =content_tag :div, m
