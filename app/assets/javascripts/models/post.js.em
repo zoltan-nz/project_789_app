@@ -1,4 +1,4 @@
-class Post extends DS.Model
+class App.Post extends DS.Model
   title: DS*.attr
   lead: DS*.attr
   body: DS*.attr

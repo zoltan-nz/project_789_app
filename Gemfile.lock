@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/fbernier/awesome_print.git
+  revision: f36e788584801aa528a284693b54faeee4467a6d
+  specs:
+    awesome_print (1.2.0)
+
+GIT
   remote: git://github.com/ghempton/ember-script-rails.git
   revision: 9a1f09b0c53bf51c37c35490cc76cd7dfe461234
   specs:
@@ -8,7 +14,7 @@ GIT
 
 GIT
   remote: git://github.com/mongoid/mongoid.git
-  revision: e93a4837b0266db46c24aae172e184f57c847b04
+  revision: aa2c82e804ef6a3ba44dfa4bd9b357017762a768
   specs:
     mongoid (4.0.0.beta1)
       activemodel (>= 4.0.0)
@@ -18,7 +24,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: 6129215afecc0b3628e0d46f5253f89e2a862c6b
+  revision: b51c3c19111fc1fbbf20c1f6ca2f099ccd028146
   specs:
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -59,7 +65,6 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    awesome_print (1.2.0)
     barber (0.4.2)
       ember-source
       execjs
@@ -352,7 +357,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  awesome_print
+  awesome_print!
   bcrypt (~> 3.1.7)
   better_errors
   binding_of_caller

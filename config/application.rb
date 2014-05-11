@@ -29,3 +29,4 @@ module App
     config.sass.preferred_syntax = :sass
   end
 end
+

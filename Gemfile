@@ -61,7 +61,7 @@ group :development do
   gem 'rack-livereload'
 
   gem 'hirb'
-  gem 'awesome_print'
+  gem 'awesome_print',            github: 'fbernier/awesome_print'
 end
 
 group :test do

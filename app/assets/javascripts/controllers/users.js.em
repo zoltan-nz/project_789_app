@@ -1,1 +1,0 @@
-class UsersController extends Em.ArrayController
