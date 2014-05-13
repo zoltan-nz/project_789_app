@@ -1,0 +1,16 @@
+{
+    "framework": "jasmin",
+    "test_page": "tmp/testem/index.html",
+  "serve_files": ["instrumented/**"],
+  "src_files": [
+        "tmp/testem/assets/application.js",
+        "tmp/testem/tests.js"
+    ],
+  "before_tests": "istanbul instrument --output instrumented tmp/testem",
+  "after_tests": "istanbul report",
+  "launch_in_dev": ["chrome"],
+    "launch_in_ci": [
+        "chrome"
+    ],
+    "parallel": 2
+}

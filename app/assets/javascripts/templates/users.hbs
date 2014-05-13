@@ -9,11 +9,13 @@
     </thead>
     <tbody>
         <tr>
-            {{#each users}}
-                <td>{{first_name}}</td>
-                <td>{{last_name}}</td>
-                <td>{{user.email}}</td>
-                <td>{{admin}}</td>
+          {{debugger}}
+            {{#each}}
+              {{debugger}}
+              <td>{{first_name}}</td>
+              <td>{{last_name}}</td>
+              <td>{{email}}</td>
+              <td>{{admin}}</td>
             {{/each}}
         </tr>
     </tbody>
