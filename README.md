@@ -1,44 +1,13 @@
-## App
+## A Blog App
 
-Todo:
+Goal:
 
-- Category implemented, next step to implement in the views
+An experiment project about a Blog with Rails generated static pages, so it will be SEO friendly and with EmberJS admin area, so it will be cool and easy to use.
 
-- Implement tagging in views (acts-astaggable-on)
-- Implement categorizing (model and view)
-- Image management (paperclip)
-- Email sending
-- Invitation (social plugin for devise)
+Features:
 
-- activeadmin-wysihtml5
-- friendly_id - permalinks
-- merit - reputation management
-- recommendable - like/dislike
-
-- Finding a presenter gem and using in views
-
-- Building administration and cms system in emberjs (should be a separated open source project)
-
-Let's build the Admin area under www.example.com/admin, and full emberjs app...
-
-Should manage:
-- authentication
-- categories
-- tags
-- create/manage users
-- manage posts
-- manage pages
-- upload images
-
-- Loading Page
-- Error management page
-
-Steps:
-
-1. Setup devise with mongodb properly. (Registration, confirmation,
-   login)
-   - Nice stylish registration and login screens.
-2. List simple blog posts in sequence. Title, body and one picture
-   enough.
-   - Home page only with pagination.
-3. Create admin area with emberjs where user can upload blog posts.
+- Blog posts
+- Pages
+- Categories
+- Tags
+- Images
