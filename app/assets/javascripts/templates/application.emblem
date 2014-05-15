@@ -1,4 +1,0 @@
-.col-md-3
-  partial 'navigation'
-.col-md-9
-  outlet
