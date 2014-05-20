@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: git://github.com/mongoid/mongoid.git
-  revision: 44b83e3156dfcf7b2ac4e5a676483306c50cc310
+  revision: bb8b503a9daa2129af4e64baca4aa6dcbfb96dac
   specs:
     mongoid (4.0.0.beta1)
       activemodel (>= 4.0.0)
@@ -206,7 +206,7 @@ GEM
       bson (~> 2.2)
       connection_pool (~> 2.0)
       optionable (~> 0.2.0)
-    multi_json (1.10.0)
+    multi_json (1.10.1)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     oj (2.9.3)
