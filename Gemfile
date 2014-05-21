@@ -51,6 +51,10 @@ gem 'mongoid',                    github: 'mongoid/mongoid'
 gem 'mongoid-paperclip'
 gem 'mongoid-history'
 
+# Elasticsearch support
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+
 group :development do
 
   gem 'better_errors'
