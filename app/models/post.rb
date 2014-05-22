@@ -3,6 +3,9 @@ class Post
   include Mongoid::Document
   include Mongoid::Timestamps
 
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
+
   field :title,   type: String
   field :lead,    type: String
   field :body,    type: String
