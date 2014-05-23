@@ -3,7 +3,11 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
-    @posts = Post.recent
+    @posts = if params[:q]
+               Post.search(params[:q])
+             else
+               Post.recent
+             end
   end
 
   # GET /posts/1
@@ -53,6 +57,6 @@ class PostsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def post_params
-      params[:post]
+      params.require(:post).permit(:q)
     end
 end

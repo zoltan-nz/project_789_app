@@ -1,1 +1,6 @@
+= form_tag 'posts', url: posts_path, method: :get do
+  = label_tag :search
+  = text_field_tag :q
+  = submit_tag :search
+
 = render @posts
