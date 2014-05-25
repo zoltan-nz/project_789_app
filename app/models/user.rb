@@ -44,12 +44,12 @@ class User
   has_many :posts
 
   # Hack for fixing mongoid, devise and rails 4.1 incompatibility
-  #class << self
-    #def serialize_from_session(key, salt)
-      #record = to_adapter.get(key[0]['$oid'])
-      #record if record && record.authenticatable_salt == salt
-    #end
-  #end
+  class << self
+    def serialize_from_session(key, salt)
+      record = to_adapter.get(key[0]['$oid'])
+      record if record && record.authenticatable_salt == salt
+    end
+  end
 
   def admin?
     self.admin

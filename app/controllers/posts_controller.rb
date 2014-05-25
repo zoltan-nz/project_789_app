@@ -1,12 +1,15 @@
 class PostsController < ApplicationController
+
+  respond_to :json, :html
+
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
   def index
     @posts = if params[:q]
-               Post.search(params[:q])
+               Post.search(params[:q]).records
              else
-               Post.recent
+               Post.order(created_at: :desc).paginate(page: params[:page], per_page: 10)
              end
   end
 

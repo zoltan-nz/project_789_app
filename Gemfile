@@ -55,6 +55,9 @@ gem 'mongoid-history'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 
+gem 'will_paginate'
+gem 'will_paginate_mongoid'
+
 group :development do
 
   gem 'better_errors'
